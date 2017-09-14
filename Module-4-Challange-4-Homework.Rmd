@@ -1,0 +1,12 @@
+---
+title: "Module-4-Challange-4-Homework"
+output: html_document
+---
+a <- array(data=400:1, dim = c(5,5,4,4))
+a
+x1 <- a[1, 1, 1, 2]
+x1
+x2 <- a[2, 3, 2, ]
+x2
+x3 <- a[1:5, 1:5, 3, 3]
+x3
