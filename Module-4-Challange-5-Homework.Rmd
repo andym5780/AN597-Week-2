@@ -1,0 +1,13 @@
+---
+title: "Module-4-finale-challange"
+output: html_document
+---
+m <- matrix(data = c(data=c(3, 0, 1 ,23, 1, 2, 33, 1, 1, 42, 0, 1, 41, 0, 2)), nrow = 5, ncol = 3, byrow = TRUE)
+m
+m <- as.data.frame(m)
+m
+m[,2]<-as.logical(m[,2])
+m
+m[,3]<-as.factor(m[,3])
+m
+str(m)
