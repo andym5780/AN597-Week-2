@@ -68,3 +68,42 @@ x <-list(Primates)
 x
 Primates
 ```
+
+##Challenge 3
+```{r}
+m <- matrix(data = 1:80, nrow = 8, ncol = 10, byrow = FALSE)
+m 
+```
+first I made the matrix
+```{r}
+x <- m[4, 5]
+x
+x2 <- m[ c(1,2,3,4,5,6,7,8), c(2,3,6)]
+x2
+x3 <- m[c(6,8), c(1,2,3,4,5,6,7,8,9,10)]
+x3
+x4 <- m[c(2,3,4,5,6), c(2,3,4,5,6,7,8,9)]
+x4
+```
+
+##Challenge 4
+```{r}
+a <- array(data=400:1, dim = c(5,5,4,4))
+a
+```
+first I made the Array
+```{r}
+x1 <- a[1, 1, 1, 2]
+x1
+x2 <- a[2, 3, 2, ]
+x2
+x3 <- a[1:5, 1:5, 3, 3]
+x3
+```
+
+
+
+
+
+
+
