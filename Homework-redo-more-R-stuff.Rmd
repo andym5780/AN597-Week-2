@@ -101,9 +101,27 @@ x3 <- a[1:5, 1:5, 3, 3]
 x3
 ```
 
+##Challenge 5
+```{r}
+m <- matrix(data = c(data=c(3, 0, 1 ,23, 1, 2, 33, 1, 1, 42, 0, 1, 41, 0, 2)), nrow = 5, ncol = 3, byrow = TRUE)
+m
+```
+I will seperate all of these so it doesn't get too confusing
+```{r}
+m <- as.data.frame(m)
+m
+```
 
+```{r}
+m[,2]<-as.logical(m[,2])
+m
+```
 
+```{r}
+m[,3]<-as.factor(m[,3])
+m
+```
 
-
-
-
+```{r}
+str(m)
+```
