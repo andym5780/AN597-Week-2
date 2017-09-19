@@ -31,3 +31,40 @@ u4 <- u3[seq(from = 1, to = 22, by = 3)]
 u4
 ```
 This was a way to select every 3rd word after the list was unlisted
+##Challenge 2
+```{r}
+Platyrrhini <- list("Cebidae", "Atelidae", "Pitheciidae")
+```
+I used the list comand to do this park
+```{r}
+Catarrhini <- list("Cercopithecidae", "Hylobatidae", "Hominidae")
+```
+
+```{r}
+Anthropoidea <- list(Platyrrhini, Catarrhini)
+names(Anthropoidea) <- list("Platyrrhini","Catarrhini")
+```
+I used names comand so I help generat my list
+```{r}
+Tarsioidea <-list("Tarsiidae")
+Haplorhini <- list(Anthropoidea, Tarsioidea)
+names(Haplorhini) <- list("Anthropoidea", "Tarsioidea")
+```
+
+```{r}
+Lorisoidea <- list("Lorisidae", "Galagidae")
+Lemuroidea <- list("Cheirogaleidae", "Lepilemuridae", "Indriidae", "Lemuridae", "Daubentoniidae")
+Strepsirhini <- list(Lorisoidea, Lemuroidea)
+names(Strepsirhini) <- list("Lorisoidea", "Lemuroidea")
+```
+
+```{r}
+Primates <- list(Haplorhini, Strepsirhini)
+names(Primates) <- list("Haplorhini", "Strepsirhini")
+```
+
+```{r}
+x <-list(Primates)
+x
+Primates
+```
