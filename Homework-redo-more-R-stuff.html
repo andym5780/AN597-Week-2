@@ -151,7 +151,136 @@ u3</code></pre>
 u4</code></pre>
 <pre><code>## [1] &quot;Stately&quot;  &quot;Mulligan&quot; &quot;the&quot;      &quot;a&quot;        &quot;lather&quot;   &quot;a&quot;       
 ## [7] &quot;a&quot;        &quot;crossed&quot;</code></pre>
-<p>This was a way to select every 3rd word after the list was unlisted</p>
+<p>This was a way to select every 3rd word after the list was unlisted ##Challenge 2</p>
+<pre class="r"><code>Platyrrhini &lt;- list(&quot;Cebidae&quot;, &quot;Atelidae&quot;, &quot;Pitheciidae&quot;)</code></pre>
+<p>I used the list comand to do this park</p>
+<pre class="r"><code>Catarrhini &lt;- list(&quot;Cercopithecidae&quot;, &quot;Hylobatidae&quot;, &quot;Hominidae&quot;)</code></pre>
+<pre class="r"><code>Anthropoidea &lt;- list(Platyrrhini, Catarrhini)
+names(Anthropoidea) &lt;- list(&quot;Platyrrhini&quot;,&quot;Catarrhini&quot;)</code></pre>
+<p>I used names comand so I help generat my list</p>
+<pre class="r"><code>Tarsioidea &lt;-list(&quot;Tarsiidae&quot;)
+Haplorhini &lt;- list(Anthropoidea, Tarsioidea)
+names(Haplorhini) &lt;- list(&quot;Anthropoidea&quot;, &quot;Tarsioidea&quot;)</code></pre>
+<pre class="r"><code>Lorisoidea &lt;- list(&quot;Lorisidae&quot;, &quot;Galagidae&quot;)
+Lemuroidea &lt;- list(&quot;Cheirogaleidae&quot;, &quot;Lepilemuridae&quot;, &quot;Indriidae&quot;, &quot;Lemuridae&quot;, &quot;Daubentoniidae&quot;)
+Strepsirhini &lt;- list(Lorisoidea, Lemuroidea)
+names(Strepsirhini) &lt;- list(&quot;Lorisoidea&quot;, &quot;Lemuroidea&quot;)</code></pre>
+<pre class="r"><code>Primates &lt;- list(Haplorhini, Strepsirhini)
+names(Primates) &lt;- list(&quot;Haplorhini&quot;, &quot;Strepsirhini&quot;)</code></pre>
+<pre class="r"><code>x &lt;-list(Primates)
+x</code></pre>
+<pre><code>## [[1]]
+## [[1]]$Haplorhini
+## [[1]]$Haplorhini$Anthropoidea
+## [[1]]$Haplorhini$Anthropoidea$Platyrrhini
+## [[1]]$Haplorhini$Anthropoidea$Platyrrhini[[1]]
+## [1] &quot;Cebidae&quot;
+## 
+## [[1]]$Haplorhini$Anthropoidea$Platyrrhini[[2]]
+## [1] &quot;Atelidae&quot;
+## 
+## [[1]]$Haplorhini$Anthropoidea$Platyrrhini[[3]]
+## [1] &quot;Pitheciidae&quot;
+## 
+## 
+## [[1]]$Haplorhini$Anthropoidea$Catarrhini
+## [[1]]$Haplorhini$Anthropoidea$Catarrhini[[1]]
+## [1] &quot;Cercopithecidae&quot;
+## 
+## [[1]]$Haplorhini$Anthropoidea$Catarrhini[[2]]
+## [1] &quot;Hylobatidae&quot;
+## 
+## [[1]]$Haplorhini$Anthropoidea$Catarrhini[[3]]
+## [1] &quot;Hominidae&quot;
+## 
+## 
+## 
+## [[1]]$Haplorhini$Tarsioidea
+## [[1]]$Haplorhini$Tarsioidea[[1]]
+## [1] &quot;Tarsiidae&quot;
+## 
+## 
+## 
+## [[1]]$Strepsirhini
+## [[1]]$Strepsirhini$Lorisoidea
+## [[1]]$Strepsirhini$Lorisoidea[[1]]
+## [1] &quot;Lorisidae&quot;
+## 
+## [[1]]$Strepsirhini$Lorisoidea[[2]]
+## [1] &quot;Galagidae&quot;
+## 
+## 
+## [[1]]$Strepsirhini$Lemuroidea
+## [[1]]$Strepsirhini$Lemuroidea[[1]]
+## [1] &quot;Cheirogaleidae&quot;
+## 
+## [[1]]$Strepsirhini$Lemuroidea[[2]]
+## [1] &quot;Lepilemuridae&quot;
+## 
+## [[1]]$Strepsirhini$Lemuroidea[[3]]
+## [1] &quot;Indriidae&quot;
+## 
+## [[1]]$Strepsirhini$Lemuroidea[[4]]
+## [1] &quot;Lemuridae&quot;
+## 
+## [[1]]$Strepsirhini$Lemuroidea[[5]]
+## [1] &quot;Daubentoniidae&quot;</code></pre>
+<pre class="r"><code>Primates</code></pre>
+<pre><code>## $Haplorhini
+## $Haplorhini$Anthropoidea
+## $Haplorhini$Anthropoidea$Platyrrhini
+## $Haplorhini$Anthropoidea$Platyrrhini[[1]]
+## [1] &quot;Cebidae&quot;
+## 
+## $Haplorhini$Anthropoidea$Platyrrhini[[2]]
+## [1] &quot;Atelidae&quot;
+## 
+## $Haplorhini$Anthropoidea$Platyrrhini[[3]]
+## [1] &quot;Pitheciidae&quot;
+## 
+## 
+## $Haplorhini$Anthropoidea$Catarrhini
+## $Haplorhini$Anthropoidea$Catarrhini[[1]]
+## [1] &quot;Cercopithecidae&quot;
+## 
+## $Haplorhini$Anthropoidea$Catarrhini[[2]]
+## [1] &quot;Hylobatidae&quot;
+## 
+## $Haplorhini$Anthropoidea$Catarrhini[[3]]
+## [1] &quot;Hominidae&quot;
+## 
+## 
+## 
+## $Haplorhini$Tarsioidea
+## $Haplorhini$Tarsioidea[[1]]
+## [1] &quot;Tarsiidae&quot;
+## 
+## 
+## 
+## $Strepsirhini
+## $Strepsirhini$Lorisoidea
+## $Strepsirhini$Lorisoidea[[1]]
+## [1] &quot;Lorisidae&quot;
+## 
+## $Strepsirhini$Lorisoidea[[2]]
+## [1] &quot;Galagidae&quot;
+## 
+## 
+## $Strepsirhini$Lemuroidea
+## $Strepsirhini$Lemuroidea[[1]]
+## [1] &quot;Cheirogaleidae&quot;
+## 
+## $Strepsirhini$Lemuroidea[[2]]
+## [1] &quot;Lepilemuridae&quot;
+## 
+## $Strepsirhini$Lemuroidea[[3]]
+## [1] &quot;Indriidae&quot;
+## 
+## $Strepsirhini$Lemuroidea[[4]]
+## [1] &quot;Lemuridae&quot;
+## 
+## $Strepsirhini$Lemuroidea[[5]]
+## [1] &quot;Daubentoniidae&quot;</code></pre>
 </div>
 
 
