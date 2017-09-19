@@ -1,0 +1,41 @@
+---
+title: "Homework-1"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+##Challange 1
+```{r}
+m <- matrix(data = c(1, 2, 3, 4), nrow = 2, ncol = 2)
+m
+m <- matrix(data = c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3, byrow = FALSE)
+m
+m <- matrix(data = c(1, 2, 3, 4, 5, 6), nrow = 2, ncol = 3)
+m
+v1 <- c(1, 2, 3, 4)
+v2 <- c(6, 7, 8, 9)
+m1 <- rbind(v1, v2)
+m1
+m2 <- cbind(v1, v2)
+m2
+str(m2)
+a <- array(data = 1:90, dim = c(5, 6, 3))
+a
+v <- 1:100
+v
+v[1:15]
+v[c(2,4,6,8,10)]
+v <- 101:200
+v[seq(from=1,to=100,by=2)]
+v <- "Stately, plump Buck Mulligan came from the stairhead, bearing a bowl of lather on which a mirror and a razor lay crossed"
+u <- gsub("[[:punct:]]","",v) #this is what I did to get rid of the puncuations because if they are in this it wont work
+?str_split()
+u
+u2 <- str_split(u, " ", n=22, simplify = FALSE) #This is what I used to sapersate everything out and split it into different parts
+u2
+u3 <- unlist(u2) #This was used so the project wouldnt be in a list and I could select the individual stuff
+u3
+u4 <- u3[seq(from = 1, to = 22, by = 3)] #This was a way to select every 3rd word after the list was unlisted
+u4
+```
