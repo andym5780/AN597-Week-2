@@ -1,7 +1,6 @@
 ---
 title: "Homework-1"
 output:
-  pdf_document: default
   html_document: default
 ---
 
